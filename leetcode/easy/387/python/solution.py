@@ -1,0 +1,15 @@
+class Solution:
+    """
+    Given a string, 's,' find the first non-repeating character and return its index.
+    If it does not exist, return -1.
+    """
+
+    def first_uniq_char(self, s: str) -> int:
+        chars = []
+        for char in s:
+            # time complexity of O(n^2) because we're traversing the
+            # string multiple times looking for each occurrence of a letter.
+            if s.count(char) == 1:
+                chars.append(char)
+
+        return s.index(chars[0]) if len(chars) > 0 else -1

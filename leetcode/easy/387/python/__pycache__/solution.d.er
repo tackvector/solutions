@@ -1,0 +1,5 @@
+##[pylyzer] failed c:\projects\solutions\leetcode\easy\387\python\solution.py 1707171601 304
+.Solution: ClassType
+.Solution.__call__: () -> .Solution
+.Solution.first_uniq_char: (self: .Solution, s: Str) -> Int
+
